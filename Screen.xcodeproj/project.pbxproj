@@ -12,6 +12,7 @@
 		95739FBA1D138E420044A1C7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95739FB81D138E420044A1C7 /* MainMenu.xib */; };
 		95739FC51D138E420044A1C7 /* ScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95739FC41D138E420044A1C7 /* ScreenTests.swift */; };
 		95739FD01D138E420044A1C7 /* ScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95739FCF1D138E420044A1C7 /* ScreenUITests.swift */; };
+		95739FDE1D138E5E0044A1C7 /* FileSystemWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95739FDD1D138E5E0044A1C7 /* FileSystemWatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		95739FCB1D138E420044A1C7 /* ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95739FCF1D138E420044A1C7 /* ScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUITests.swift; sourceTree = "<group>"; };
 		95739FD11D138E420044A1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95739FDD1D138E5E0044A1C7 /* FileSystemWatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				95739FB61D138E420044A1C7 /* Assets.xcassets */,
 				95739FB81D138E420044A1C7 /* MainMenu.xib */,
 				95739FBB1D138E420044A1C7 /* Info.plist */,
+				95739FDD1D138E5E0044A1C7 /* FileSystemWatcher.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -187,6 +190,12 @@
 				TargetAttributes = {
 					95739FB01D138E420044A1C7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9964ZUU393;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					95739FBF1D138E420044A1C7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -249,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95739FDE1D138E5E0044A1C7 /* FileSystemWatcher.swift in Sources */,
 				95739FB51D138E420044A1C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,7 +472,7 @@
 				95739FD31D138E420044A1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		95739FD41D138E420044A1C7 /* Build configuration list for PBXNativeTarget "Screen" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +481,7 @@
 				95739FD61D138E420044A1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		95739FD71D138E420044A1C7 /* Build configuration list for PBXNativeTarget "ScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +490,7 @@
 				95739FD91D138E420044A1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		95739FDA1D138E420044A1C7 /* Build configuration list for PBXNativeTarget "ScreenUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +499,7 @@
 				95739FDC1D138E420044A1C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
